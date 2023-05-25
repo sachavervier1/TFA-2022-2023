@@ -2,3 +2,98 @@
 
 @import 'utils/variables';
 @import 'components/type';
+
+h1,
+h2,
+h3,
+body,
+p {
+    margin: 0;
+}
+
+body {
+    background-color: #013577;
+    color: white;
+}
+
+h1 {
+    font-size: 55px;
+    margin: 52px 19px 26px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 26px;
+    color: #FFA500;
+    padding: 26px 19px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+p {
+    font-size: 16px;
+    padding-bottom: 26px;
+    line-height: 26px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    .gras {
+        font-family: "museo-sans", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+    }
+}
+
+.ecarte {
+    margin-left: 32px;
+
+}
+
+.normale {
+
+    margin-right: 32px;
+}
+
+.soulignement {
+    border-bottom: solid 5px #FE1B00;
+    display: inline-block;
+    height: 21px;
+}
+
+.un {
+    border-left: dashed 2px #07C747;
+    border-bottom: dashed 2px #07C747;
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+.deux {
+    border-right: dashed 2px #07C747;
+    border-bottom: dashed 2px #07C747;
+    margin-right: 19px;
+    margin-left: 19px;
+}
+
+.fleche {
+    position: absolute;
+    left: 3.4%;
+    position: fixed;
+
+}
+
+.center {
+    margin: 0 auto;
+    display: block;
+}
+
+.logospace {
+    margin-top: 26px;
+}
+
+.secondtitrespace {
+    padding-left: 0px;
+}
