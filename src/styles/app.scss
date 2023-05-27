@@ -66,16 +66,16 @@ p {
 
 .un {
     border-left: dashed 2px #07C747;
-    border-bottom: dashed 2px #07C747;
     margin-left: 19px;
     margin-right: 19px;
+    margin-bottom: 26px;
 }
 
 .deux {
     border-right: dashed 2px #07C747;
-    border-bottom: dashed 2px #07C747;
     margin-right: 19px;
     margin-left: 19px;
+    margin-bottom: 26px;
 }
 
 .fleche {
@@ -96,4 +96,10 @@ p {
 
 .secondtitrespace {
     padding-left: 0px;
+    display: flex;
+    justify-content: end;
+}
+
+.lastpara {
+    padding-bottom: 0px;
 }
