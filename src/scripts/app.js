@@ -19,37 +19,19 @@ gsap.to("body", {
 });
 
 
-// var layers = document.querySelectorAll('.fleche');
+gsap.to(".fleche--1", {
+    opacity: 0,
+    position: "absolute",
 
-// function parallax() {
+    scrollTrigger: {
+        trigger: ".un",
+        start: "bottom 46%",
+        toggleActions: "restart pause resume reverse ",
+        markers: true,
 
-//     var scrollTop = window.pageYOffset;
+    },
 
-//     layers.forEach(function (layer) {
-//         var speed = layer.getAttribute('data-speed');
-//         var yPos = scrollTop * speed / 20;
-//         layer.style.transform = 'TranslateY(' + yPos + 'px)';
-//     });
-
-
-// }
-
-// window.addEventListener('scroll', parallax);
+});
 
 
-// gsap.to(".fleche", {
 
-//     x,
-//     y: -5,
-//     rotateY: 180,
-//     duration: 0.06,
-
-
-//     scrollTrigger: {
-//         trigger: ".un",
-//         start: "bottom 47%",
-//         end: "bottom 46%",
-//         toggleActions: "play play reverse reverse",
-//     },
-
-// });
