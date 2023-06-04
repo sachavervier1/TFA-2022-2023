@@ -10,3 +10,122 @@ body,
 p {
     margin: 0;
 }
+
+body {
+    background-color: #F7EBE8;
+}
+
+.header {
+    padding: 29px 18px 0px;
+}
+
+.header--flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titre1 {
+    position: absolute;
+    color: black;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: center;
+    top: 14%;
+    left: 25%;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.titre2 {
+    font-size: 29px;
+    color: #D41700;
+    margin-left: 18px;
+    margin-top: 58px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.titre3 {
+    font-size: 23.5px;
+    color: #D41700;
+    margin-left: 18px;
+    margin-top: 58px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.paragraphe {
+    color: black;
+    font-family: "museo-sans", sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 100;
+    font-style: normal;
+    margin: 26px 18px 0px 18px;
+
+}
+
+.gras {
+    font-family: "museo-sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bouton {
+    display: block;
+    width: 290px;
+    height: 74px;
+    border: solid 1px #D41700;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 58px;
+    margin-bottom: 29px;
+}
+
+.cursor {
+    position: relative;
+    left: 20%;
+    top: 10%;
+
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: solid 1px black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button--plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 58px;
+
+}
+
+.button--fleche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fleche__div {
+    display: flex;
+    justify-content: space-between;
+    margin: 58px 47px 0px
+}
