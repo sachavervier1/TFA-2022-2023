@@ -68,6 +68,18 @@ body {
 
 }
 
+.paragraphe--cache1,
+.paragraphe--cache2,
+.paragraphe--cache3,
+.paragraphe--cache4,
+.paragraphe--cache5 {
+    display: none;
+}
+
+.montre {
+    display: block;
+}
+
 .gras {
     font-family: "museo-sans", sans-serif;
     font-weight: 500;
@@ -107,6 +119,7 @@ body {
     border: solid 1px black;
     background-color: transparent;
     cursor: pointer;
+
 }
 
 .button--plus {
