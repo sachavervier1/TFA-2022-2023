@@ -57,6 +57,12 @@ body {
     font-style: normal;
 }
 
+.titre3--audit {
+    margin-top: 29px;
+    margin-left: 0px;
+    margin-bottom: 29px;
+}
+
 .paragraphe {
     color: black;
     font-family: "museo-sans", sans-serif;
@@ -64,7 +70,7 @@ body {
     line-height: 29px;
     font-weight: 100;
     font-style: normal;
-    margin: 26px 18px 0px 18px;
+    margin: 29px 18px 0px 18px;
 
 }
 
@@ -74,6 +80,7 @@ body {
 .paragraphe--cache4,
 .paragraphe--cache5 {
     display: none;
+
 }
 
 .montre {
@@ -127,7 +134,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 58px;
+    margin-top: 43px;
 
 }
 
@@ -138,7 +145,10 @@ body {
 }
 
 .fleche__div {
-    display: flex;
-    justify-content: space-between;
-    margin: 58px 47px 0px
+    margin: 43px 0px 0px 18px
+}
+
+.audit {
+
+    margin-bottom: 43px;
 }
