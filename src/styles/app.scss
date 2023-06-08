@@ -24,6 +24,10 @@ body {
     display: none;
 }
 
+.pc--cursor {
+    display: none;
+}
+
 .header {
     padding: 29px 18px 0px;
 }
@@ -376,6 +380,11 @@ a {
         display: block;
     }
 
+    .pc--cursor {
+        opacity: 1;
+        display: initial;
+    }
+
 
     .titre1 {
         position: absolute;
@@ -473,21 +482,21 @@ a {
 
     .bouton {
         display: block;
-        width: 290px;
-        height: 74px;
+        width: 526px;
+        height: 134px;
         border: solid 1px #D41700;
         border-radius: 10px;
         background-color: transparent;
         color: black;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 29px;
+        line-height: 40px;
         font-family: "museo-sans", sans-serif;
         font-weight: 500;
         font-style: normal;
         cursor: pointer;
         margin: 0 auto;
-        margin-top: 58px;
-        margin-bottom: 29px;
+        margin-top: 112px;
+        margin-bottom: 56px;
     }
 
     .cursor {
