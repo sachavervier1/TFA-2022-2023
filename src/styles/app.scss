@@ -2,6 +2,7 @@
 
 @import 'utils/variables';
 @import 'components/type';
+@import 'components/burger';
 
 h1,
 h2,
@@ -85,14 +86,6 @@ body {
     display: none;
 }
 
-.pc--cursor {
-    display: none;
-}
-
-.tablette--cursor {
-    display: none;
-}
-
 .header {
     padding: 29px 18px 0px;
 }
@@ -135,6 +128,14 @@ body {
     font-style: normal;
 }
 
+.titre3--fonction {
+    margin-top: 43px;
+}
+
+.paragraphe--audit {
+    margin-top: 18px;
+}
+
 .titre3--audit {
     margin-top: 29px;
     margin-left: 0px;
@@ -156,7 +157,10 @@ body {
 .paragraphe--cache2,
 .paragraphe--cache3,
 .paragraphe--cache4,
-.paragraphe--cache5 {
+.paragraphe--cache5,
+.paragraphe--cache6,
+.paragraphe--cache7,
+.paragraphe--cache8 {
     display: none;
 
 }
@@ -169,32 +173,6 @@ body {
     font-family: "museo-sans", sans-serif;
     font-weight: 500;
     font-style: normal;
-}
-
-.bouton {
-    display: block;
-    width: 290px;
-    height: 74px;
-    border: solid 1px #D41700;
-    border-radius: 10px;
-    background-color: transparent;
-    color: black;
-    font-size: 18px;
-    line-height: 26px;
-    font-family: "museo-sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    cursor: pointer;
-    margin: 0 auto;
-    margin-top: 58px;
-    margin-bottom: 29px;
-}
-
-.cursor {
-    position: relative;
-    left: 20%;
-    top: 10%;
-
 }
 
 .button {
@@ -302,20 +280,12 @@ a {
         display: block;
     }
 
-    .tablette--cursor {
-        display: initial;
-    }
-
     .pc {
         display: none;
     }
 
     .pc--burger {
         display: block;
-    }
-
-    .pc--cursor {
-        display: none;
     }
 
     .header {
@@ -366,6 +336,14 @@ a {
         margin-bottom: 32px;
     }
 
+    .titre3--fonction {
+        margin-top: 48px;
+    }
+
+    .paragraphe--audit {
+        margin-top: 20px;
+    }
+
     .paragraphe {
         color: black;
         font-family: "museo-sans", sans-serif;
@@ -381,7 +359,10 @@ a {
     .paragraphe--cache2,
     .paragraphe--cache3,
     .paragraphe--cache4,
-    .paragraphe--cache5 {
+    .paragraphe--cache5,
+    .paragraphe--cache6,
+    .paragraphe--cache7,
+    .paragraphe--cache8 {
         display: none;
 
     }
@@ -396,31 +377,7 @@ a {
         font-style: normal;
     }
 
-    .bouton {
-        display: block;
-        width: 370px;
-        height: 94px;
-        border: solid 1px #D41700;
-        border-radius: 10px;
-        background-color: transparent;
-        color: black;
-        font-size: 20px;
-        line-height: 29px;
-        font-family: "museo-sans", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        cursor: pointer;
-        margin: 0 auto;
-        margin-top: 64px;
-        margin-bottom: 32px;
-    }
 
-    .cursor {
-        position: relative;
-        left: 26%;
-        top: 10%;
-
-    }
 
     .button {
         width: 45px;
@@ -460,8 +417,9 @@ a {
 
         }
     }
-
 }
+
+
 
 @media (min-width: 800px) {
     .titre1 {
@@ -474,72 +432,6 @@ a {
         left: 12%;
     }
 }
-
-// @media (max-width:1279px) {
-
-.topnav__burger {
-    z-index: 1000;
-    cursor: pointer;
-    position: sticky;
-    border: none;
-    background-color: transparent;
-}
-
-.topnav__liste {
-    margin: 0;
-    padding: 0;
-    z-index: 99;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    transition: all .6s cubic-bezier(1, .19, .02, .99);
-    transform: translateY(0);
-    display: inline-block;
-    list-style: none;
-    background-color: #F7EBE8;
-
-}
-
-.topnav__el {
-    font-family: "museo-sans", sans-serif;
-    font-size: 18px;
-    line-height: 29px;
-    font-weight: 100;
-    font-style: normal;
-    padding: 60px 0px;
-    text-align: center;
-    margin-right: 15%;
-    transform: translateY(0%);
-    opacity: 0;
-    transition: all .6s cubic-bezier(1, .19, .02, .99);
-}
-
-.topnav--open .topnav__liste {
-    transform: translateX(-80%);
-}
-
-.topnav--open .topnav__el {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.topnav--open .topnav__el:nth-child(1) {
-    padding-top: 150px;
-    transition-delay: 0.5s;
-}
-
-.topnav--open .topnav__el:nth-child(2) {
-    transition-delay: 0.7s;
-}
-
-.topnav--open .topnav__el:nth-child(3) {
-    transition-delay: 0.9s;
-}
-
-
-// }
 
 @media (min-width: 1280px) {
 
@@ -617,7 +509,7 @@ a {
 
     .grid__elq {
         grid-column: 9/14;
-        grid-row: 2/4;
+        grid-row: 2/5;
     }
 
     .grid__elr {
@@ -627,7 +519,7 @@ a {
 
     .grid__els {
         grid-column: 9/14;
-        grid-row: 2/4;
+        grid-row: 2/5;
     }
 
     .grid__elt {
@@ -637,7 +529,7 @@ a {
 
     .grid__elu {
         grid-column: 9/14;
-        grid-row: 2/4;
+        grid-row: 2/5;
     }
 
     .grid__elv {
@@ -688,16 +580,6 @@ a {
     .pc--burger {
         display: block;
     }
-
-    .pc--cursor {
-        opacity: 1;
-        display: initial;
-    }
-
-    .tablette--cursor {
-        display: none;
-    }
-
 
     .titre1 {
         position: absolute;
@@ -763,6 +645,14 @@ a {
         margin-bottom: 35px;
     }
 
+    .titre3--fonction {
+        margin-top: 52px;
+    }
+
+    .paragraphe--audit {
+        margin-top: 22px;
+    }
+
     .paragraphe {
         color: black;
         font-family: "museo-sans", sans-serif;
@@ -778,7 +668,10 @@ a {
     .paragraphe--cache2,
     .paragraphe--cache3,
     .paragraphe--cache4,
-    .paragraphe--cache5 {
+    .paragraphe--cache5,
+    .paragraphe--cache6,
+    .paragraphe--cache7,
+    .paragraphe--cache8 {
         display: none;
 
     }
@@ -791,32 +684,6 @@ a {
         font-family: "museo-sans", sans-serif;
         font-weight: 500;
         font-style: normal;
-    }
-
-    .bouton {
-        display: block;
-        width: 526px;
-        height: 134px;
-        border: solid 1px #D41700;
-        border-radius: 10px;
-        background-color: transparent;
-        color: black;
-        font-size: 29px;
-        line-height: 40px;
-        font-family: "museo-sans", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        cursor: pointer;
-        margin: 0 auto;
-        margin-top: 112px;
-        margin-bottom: 56px;
-    }
-
-    .cursor {
-        position: relative;
-        left: 27%;
-        top: 10%;
-
     }
 
     .button {
