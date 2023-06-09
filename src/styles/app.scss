@@ -16,6 +16,67 @@ body {
     overflow-x: hidden;
 }
 
+.gridcontainer3 {
+    display: grid;
+    grid-template-columns: 0px repeat(5, 1fr) 0px;
+    column-gap: 18px;
+
+}
+
+.grid__eln {
+    grid-column: 1/-1;
+}
+
+.grid__elo {
+    grid-column: 1/-1;
+}
+
+.grid__elp {
+    grid-column: 1;
+    grid-row: 3/4;
+}
+
+.grid__elq {
+    grid-column: 1/-1;
+    grid-row: 4;
+}
+
+.grid__elr {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.grid__els {
+    grid-column: 1/-1;
+    grid-row: 4;
+}
+
+.grid__elt {
+    grid-column: 6;
+    grid-row: 3;
+}
+
+.grid__elu {
+    grid-column: 1/-1;
+    grid-row: 4;
+}
+
+.grid__elv {
+    grid-column: 1/-1;
+}
+
+.grid__elw {
+    grid-column: 1/-1;
+}
+
+.grid__elx {
+    grid-column: 1/-1;
+}
+
+.tablette {
+    display: none;
+}
+
 .pc {
     display: none;
 }
@@ -25,6 +86,10 @@ body {
 }
 
 .pc--cursor {
+    display: none;
+}
+
+.tablette--cursor {
     display: none;
 }
 
@@ -40,10 +105,10 @@ body {
 .titre1 {
     position: absolute;
     color: black;
-    font-size: 60px;
+    font-size: 62px;
     line-height: 72px;
     text-align: center;
-    top: 14%;
+    top: 12%;
     left: 25%;
     font-family: "museo-sans", sans-serif;
     font-weight: 500;
@@ -167,6 +232,246 @@ a {
     &:visited {
         color: #D41700;
 
+    }
+}
+
+@media (min-width: 700px) {
+
+    .gridcontainer2 {
+        display: grid;
+        grid-template-columns: 0px repeat(8, 1fr) 0px;
+        column-gap: 32px;
+
+    }
+
+    .grid__eln {
+        grid-column: 1/-1;
+    }
+
+    .grid__elo {
+        grid-column: 1/-1;
+    }
+
+    .grid__elp {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .grid__elq {
+        grid-column: 1/-1;
+        grid-row: 4;
+    }
+
+    .grid__elr {
+        grid-column: 5;
+        grid-row: 3;
+    }
+
+    .grid__els {
+        grid-column: 1/-1;
+        grid-row: 4;
+    }
+
+    .grid__elt {
+        grid-column: 7;
+        grid-row: 3;
+    }
+
+    .grid__elu {
+        grid-column: 1/-1;
+        grid-row: 4;
+    }
+
+    .grid__elv {
+        grid-column: 1/-1;
+    }
+
+    .grid__elw {
+        grid-column: 1/-1;
+    }
+
+    .grid__elx {
+        grid-column: 1/-1;
+    }
+
+    .tel {
+        display: none;
+    }
+
+    .tablette {
+        display: block;
+    }
+
+    .tablette--cursor {
+        display: initial;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .pc--burger {
+        display: block;
+    }
+
+    .pc--cursor {
+        display: none;
+    }
+
+    .header {
+        padding: 32px 32px 0px;
+    }
+
+    .header--flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titre1 {
+        position: absolute;
+        color: black;
+        font-size: 110px;
+        line-height: 130px;
+        text-align: center;
+        top: 10%;
+        left: 20%;
+        font-family: "museo-sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .titre2 {
+        font-size: 32px;
+        color: #D41700;
+        margin-left: 32px;
+        padding-top: 64px;
+        font-family: "museo-sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .titre3 {
+        font-size: 26px;
+        color: #D41700;
+        margin-left: 32px;
+        margin-top: 64px;
+        font-family: "museo-sans", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .titre3--audit {
+        margin-top: 32px;
+        margin-left: 0px;
+        margin-bottom: 32px;
+    }
+
+    .paragraphe {
+        color: black;
+        font-family: "museo-sans", sans-serif;
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 100;
+        font-style: normal;
+        margin: 32px 32px 0px 32px;
+
+    }
+
+    .paragraphe--cache1,
+    .paragraphe--cache2,
+    .paragraphe--cache3,
+    .paragraphe--cache4,
+    .paragraphe--cache5 {
+        display: none;
+
+    }
+
+    .montre {
+        display: block;
+    }
+
+    .gras {
+        font-family: "museo-sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .bouton {
+        display: block;
+        width: 370px;
+        height: 94px;
+        border: solid 1px #D41700;
+        border-radius: 10px;
+        background-color: transparent;
+        color: black;
+        font-size: 20px;
+        line-height: 29px;
+        font-family: "museo-sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 64px;
+        margin-bottom: 32px;
+    }
+
+    .cursor {
+        position: relative;
+        left: 26%;
+        top: 10%;
+
+    }
+
+    .button {
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        border: solid 1px black;
+        background-color: transparent;
+        cursor: pointer;
+
+    }
+
+    .button--plus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 48px;
+
+    }
+
+    .button--fleche {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 48px;
+        margin-left: 32px;
+
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: 19px;
+
+        &:visited {
+            color: #D41700;
+
+        }
+    }
+
+}
+
+@media (min-width: 800px) {
+    .titre1 {
+        top: 15%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .titre1 {
+        left: 12%;
     }
 }
 
@@ -370,6 +675,10 @@ a {
         display: none;
     }
 
+    .tablette {
+        display: none;
+    }
+
     .pc {
         display: block;
         position: absolute;
@@ -383,6 +692,10 @@ a {
     .pc--cursor {
         opacity: 1;
         display: initial;
+    }
+
+    .tablette--cursor {
+        display: none;
     }
 
 
@@ -501,7 +814,7 @@ a {
 
     .cursor {
         position: relative;
-        left: 20%;
+        left: 27%;
         top: 10%;
 
     }
@@ -546,6 +859,7 @@ a {
     a {
         color: black;
         text-decoration: none;
+        font-size: 20px;
 
         &:visited {
             color: #D41700;
