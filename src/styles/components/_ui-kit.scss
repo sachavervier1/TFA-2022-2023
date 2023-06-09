@@ -1,0 +1,114 @@
+.titre1--ui {
+
+    color: black;
+    font-size: 62px;
+    line-height: 72px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 29px 18px 0px;
+}
+
+.titre2--ui {
+    font-size: 29px;
+    color: #D41700;
+    margin-left: 18px;
+    padding-top: 58px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.titre3--ui {
+    font-size: 23.5px;
+    color: #D41700;
+    margin-left: 18px;
+    margin-top: 58px;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.paragraphe--ui {
+    color: black;
+    font-family: "museo-sans", sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 100;
+    font-style: normal;
+    margin: 29px 18px 0px 18px;
+}
+
+.button--ui {
+    margin-left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 43px;
+}
+
+@media (min-width: 700px) {
+
+    .button--ui {
+        margin-left: 32px;
+    }
+
+    .titre1--ui {
+        font-size: 110px;
+        line-height: 130px;
+        margin-left: 32px;
+        margin-top: 32px;
+    }
+
+    .titre2--ui {
+        font-size: 32px;
+        margin-left: 32px;
+        padding-top: 64px;
+    }
+
+    .titre3--ui {
+        font-size: 26px;
+        margin-left: 32px;
+        margin-top: 64px;
+    }
+
+    .paragraphe--ui {
+        font-size: 20px;
+        line-height: 32px;
+        margin: 32px 32px 0px 32px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+
+
+    .titre2--ui,
+    .titre3--ui,
+    .paragraphe--ui,
+    .button--ui {
+        margin-left: 56px;
+    }
+
+    .titre1--ui {
+        font-size: 131px;
+        line-height: 72px;
+        margin-top: 56px;
+    }
+
+    .titre2--ui {
+        font-size: 56px;
+        padding-top: 112px;
+    }
+
+    .titre3--ui {
+        font-size: 39px;
+        margin-top: 56px;
+    }
+
+    .paragraphe--ui {
+        font-size: 22px;
+        line-height: 35px;
+        margin-top: 56px;
+    }
+}
